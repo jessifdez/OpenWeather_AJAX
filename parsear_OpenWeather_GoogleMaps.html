@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Formulario</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			.capa_mapa {
+				height: 500px;  /* The height is 400 pixels */
+				width: 500px;  /* The width is the width of the web page */
+			}
+		</style>
+	</head>
+	<body>
+	<div class="container">
+	<select name="ciudad" class="custom-select" id=ciudad>
+            <option selected>Seleccione una ciudad</option>
+            <option value="Madrid" >Madrid</option>
+            <option value='Barcelona' >Barcelona</option>
+            <option value='Alicante' >Alicante</option>
+			<option value='Sevilla' >Sevilla</option>
+			<option value='Bilbao' >Bilbao</option>
+			<option value='Lugo' >Lugo</option>
+			<option value='Palencia' >Palencia</option>
+			<option value='Murcia' >Murcia</option>
+			<option value='Zaragoza' >Zaragoza</option>
+			<option value='Badajoz' >Badajoz</option>
+			<option value='Cáceres' >Cáceres</option>
+			<option value='Torremolinos' >Torremolinos</option>
+        </select>
+		<input type="hidden" name="accion" value="verenlace"/>
+        <input type="submit" class="btn btn-info" value="Mostrar temperaturas" onclick="mostrarTemperaturas();">
+		<br><br>
+		<div class="capa_mapa" id="mapa"></div>
+		</div>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2nnTwxI_6v6FgZQ_HYALbkWsL3qhFjT4">
+		</script>
+		<script src="js/funciones_GoogleMaps.js"></script>
+	</body>
+</html>
